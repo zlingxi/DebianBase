@@ -27,14 +27,15 @@ echo "
     deb https://mirrors.aliyun.com/debian/ bullseye-updates main non-free contrib 
     deb-src https://mirrors.aliyun.com/debian/ bullseye-updates main non-free contrib 
     deb https://mirrors.aliyun.com/debian/ bullseye-backports main non-free contrib 
-    deb-src https://mirrors.aliyun.com/debian/ bullseye-backports main non-free contrib" >> /etc/apt/sources.list && apt update
+    deb-src https://mirrors.aliyun.com/debian/ bullseye-backports main non-free contrib" >> /etc/apt/sources.list
+    apt update -y && apt install apt upgrade -y 
 
 
 //change ssh_config ----------------------------------------------------------------------------------------------------------------------
 echo "
     PermitRootLogin yes
     PasswordAuthentication yes" >> /etc/ssh/sshd_config
-source ssh restart
+service ssh restart
 
 
 //install package -------------------------------------------------------------------------------------------------------------------------
