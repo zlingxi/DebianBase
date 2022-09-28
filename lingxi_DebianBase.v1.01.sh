@@ -17,6 +17,11 @@ echo "
 
 
 
+//install package -------------------------------------------------------------------------------------------------------------------------
+apt install sshfs -y && apt install cifs-utils -y && apt install vim -y
+
+
+
 //.profile change ------------------------------------------------------------------------------------------------------------------------
 echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /root/.profile
 source /root/.profile
@@ -54,6 +59,4 @@ echo "
     PasswordAuthentication yes" >> /etc/ssh/sshd_config && /etc/init.d/ssh restart
 
 
-//install package -------------------------------------------------------------------------------------------------------------------------
-apt install sshfs -y && apt install cifs-utils -y && apt install vim -y
 
