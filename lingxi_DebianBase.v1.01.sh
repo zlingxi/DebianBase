@@ -13,7 +13,7 @@ echo "#root.bashrc conf
   alias l='ls $LS_OPTIONS -lA'
   alias rm='rm -i'
   alias cp='cp -i'
-  alias mv='mv -i'" >> /root/.bashrc && source /root/.bashrc
+  alias mv='mv -i'" >> /root/.bashrc
 
 
 
@@ -24,7 +24,7 @@ echo "#root.bashrc conf
   alias l='ls $LS_OPTIONS -lA'
   alias rm='rm -i'
   alias cp='cp -i'
-  alias mv='mv -i'" >> /home/lingxi/.bashrc && source /home/lingxi/.bashrc
+  alias mv='mv -i'" >> /home/lingxi/.bashrc
 
 
 //change image sources.list --------------------------------------------------------------------------------------------------------------
@@ -43,6 +43,7 @@ echo "
     deb-src https://mirrors.aliyun.com/debian/ bullseye-backports main non-free contrib" >> /etc/apt/sources.list
     apt update -y && apt install apt upgrade -y 
 
+source /root/.bashrc && source /home/lingxi/.bashrc
 
 //change ssh_config ----------------------------------------------------------------------------------------------------------------------
 echo "
