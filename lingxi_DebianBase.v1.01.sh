@@ -1,6 +1,6 @@
 #！/bin/bash
 
-# image sources.list --------------------------------------------------------------------------------------------------------------
+# image sources.list -------------------------------------
 mv /etc/apt/sources.list /etc/apt/sources.list.bak
 touch /etc/apt/sources.list
 echo "
@@ -16,16 +16,16 @@ echo "
     apt update -y && apt install apt dist-upgrade -y 
 
 
-# installPackage --------------------------------------------------------------------------------------------------------------------
+# installPackage -------------------------------------------
 apt install sshfs -y && apt install cifs-utils -y && apt install vim -y
 
 
-# //.profile  ------------------------------------------------------------------------------------------------------------------------
+# //.profile  ----------------------------------------------
 echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /root/.profile
 echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /home/lingxi/.profile
 
 
-# .bashrc  -------------------------------------------------------------------------------------------------------------------------
+# .bashrc  -------------------------------------------------
 echo "# root.bashrc conf
   alias ls='ls $LS_OPTIONS'
   alias ll='ls $LS_OPTIONS -l'
@@ -45,7 +45,7 @@ echo "# root.bashrc conf
   alias ls='ls --color'" >> /home/lingxi/.bashrc
 
 
-# change ssh_config ----------------------------------------------------------------------------------------------------------------------
+# change ssh_config ------------------------------------------
 touch /etc/ssh/sshd_config.d/RootsshLogin.conf
 echo "
   PermitRootLogin yes
