@@ -33,7 +33,7 @@ echo "# root.bashrc conf
   alias rm='rm -i'
   alias cp='cp -i'
   alias mv='mv -i'"
-  alias ls='ls --color' >> /root/.bashrc
+  alias ls='ls --color'" >> /root/.bashrc
 
   echo "# lingxi.bashrc conf 
   alias ls='ls $LS_OPTIONS'
@@ -42,7 +42,7 @@ echo "# root.bashrc conf
   alias rm='rm -i'
   alias cp='cp -i'
   alias mv='mv -i'"
-  alias ls='ls --color' >> /home/lingxi/.bashrc
+  alias ls='ls --color'" >> /home/lingxi/.bashrc
 
 
 # change ssh_config ----------------------------------------------------------------------------------------------------------------------
