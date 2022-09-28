@@ -9,9 +9,9 @@
 
 # 使用方法：
 1. 安装好Debian系统后，使用root账户登录；
-2. 执行git clone https://github.com/zlingxi/DebianBase.git
-3. 执行sh /root/DebianBase/lingxi_DebianBase.v1.01.sh 等待安装完成；
-4. 如果部分没起作用。请执行init 6 或者 reboot重启系统即可；
+2. 执行 git clone https://github.com/zlingxi/DebianBase.git
+3. 执行 sh /root/DebianBase/lingxi_DebianBase.v1.01.sh 等待安装完成；
+4. 如果部分没起作用。请执行init 6 或者 reboot 重启系统即可；
 
 ## 注意：
 使用root账户执行本脚本；
