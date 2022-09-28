@@ -26,7 +26,7 @@ echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /home/lingxi/.profil
 
 
 # .bashrc  -------------------------------------------------------------------------------------------------------------------------
-echo "#root.bashrc conf 
+echo "# root.bashrc conf 
   alias ls='ls --color'
   alias ls='ls $LS_OPTIONS'
   alias ll='ls $LS_OPTIONS -l'
@@ -35,7 +35,7 @@ echo "#root.bashrc conf
   alias cp='cp -i'
   alias mv='mv -i'" >> /root/.bashrc
 
-  echo "#lingxi.bashrc conf 
+  echo "# lingxi.bashrc conf 
   alias ls='ls --color'
   alias ls='ls $LS_OPTIONS'
   alias ll='ls $LS_OPTIONS -l'
@@ -46,10 +46,10 @@ echo "#root.bashrc conf
 
 
 # change ssh_config ----------------------------------------------------------------------------------------------------------------------
-touch /etc/ssh_config.d/RootsshLogin.conf
+touch /etc/ssh/ssh_config.d/RootsshLogin.conf
 echo "
     PermitRootLogin yes
-    PasswordAuthentication yes" >> /etc/ssh_config.d/RootsshLogin.conf && /etc/init.d/ssh restart
+    PasswordAuthentication yes" >> /etc/ssh/ssh_config.d/RootsshLogin.conf && /etc/init.d/ssh restart
 
 
 init 6
