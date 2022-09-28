@@ -1,8 +1,8 @@
 #！/bin/bash
+
 # image sources.list --------------------------------------------------------------------------------------------------------------
 mv /etc/apt/sources.list /etc/apt/sources.list.bak
 touch /etc/apt/sources.list
-
 echo "
     # aliyunsource----------------------------
     deb https://mirrors.aliyun.com/debian/ bullseye main non-free contrib 
@@ -16,16 +16,13 @@ echo "
     apt update -y && apt install apt upgrade -y 
 
 
-
-# installPackage -------------------------------------------------------------------------------------------------------------------------
+# installPackage --------------------------------------------------------------------------------------------------------------------
 apt install sshfs -y && apt install cifs-utils -y && apt install vim -y
-
 
 
 # //.profile  ------------------------------------------------------------------------------------------------------------------------
 echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /root/.profile
 echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /home/lingxi/.profile
-
 
 
 # .bashrc  -------------------------------------------------------------------------------------------------------------------------
@@ -46,7 +43,6 @@ echo "#root.bashrc conf
   alias rm='rm -i'
   alias cp='cp -i'
   alias mv='mv -i'" >> /home/lingxi/.bashrc
-
 
 
 # change ssh_config ----------------------------------------------------------------------------------------------------------------------
