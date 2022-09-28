@@ -3,14 +3,10 @@
 //.profile change ------------------------------------------------------------------------------------------------------------------------
 echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /root/.profile
 source /root/.profile
-
-
 echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /home/lingxi/.profile
 source  /home/lingxi/.profile
 
 //.bashrc change -------------------------------------------------------------------------------------------------------------------------
-
-
 echo "#root.bashrc conf 
   alias ls='ls --color'
   alias ls='ls $LS_OPTIONS'
