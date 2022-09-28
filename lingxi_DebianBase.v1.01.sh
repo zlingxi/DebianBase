@@ -52,7 +52,6 @@ echo "#root.bashrc conf
 source /root/.bashrc && source /home/lingxi/.bashrc
 
 
-
 //change ssh_config ----------------------------------------------------------------------------------------------------------------------
 echo "
     PermitRootLogin yes
