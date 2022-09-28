@@ -17,7 +17,7 @@ echo "
 
 
 # installPackage -------------------------------------------
-apt install sshfs -y && apt install cifs-utils -y && apt install vim -y
+apt install sshfs -y && apt install cifs-utils -y && apt install vim -y && apt install sudo -y
 
 
 # //.profile  ----------------------------------------------
