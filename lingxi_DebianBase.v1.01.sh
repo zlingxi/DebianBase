@@ -3,8 +3,7 @@
 //.profile change ------------------------------------------------------------------------------------------------------------------------
 echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /root/.profile
 source /root/.profile
-echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /home/lingxi/.profile
-source  /home/lingxi/.profile
+echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /home/lingxi/.profile && source  /home/lingxi/.profile
 
 //.bashrc change -------------------------------------------------------------------------------------------------------------------------
 echo "#root.bashrc conf 
@@ -14,8 +13,8 @@ echo "#root.bashrc conf
   alias l='ls $LS_OPTIONS -lA'
   alias rm='rm -i'
   alias cp='cp -i'
-  alias mv='mv -i'" >> /root/.bashrc
-  source /root/.bashrc
+  alias mv='mv -i'" >> /root/.bashrc && source /root/.bashrc
+
 
 
   echo "#lingxi.bashrc conf 
@@ -25,8 +24,7 @@ echo "#root.bashrc conf
   alias l='ls $LS_OPTIONS -lA'
   alias rm='rm -i'
   alias cp='cp -i'
-  alias mv='mv -i'" >> /home/lingxi/.bashrc
-  source /home/lingxi/.bashrc
+  alias mv='mv -i'" >> /home/lingxi/.bashrc && source /home/lingxi/.bashrc
 
 
 //change image sources.list --------------------------------------------------------------------------------------------------------------
@@ -34,6 +32,7 @@ mv /etc/apt/sources.list /etc/apt/sources.list.bak
 touch /etc/apt/sources.list
 
 echo "
+    //aliyunsource-------------------------------------------------------------------------------------------------------------------------
     deb https://mirrors.aliyun.com/debian/ bullseye main non-free contrib 
     deb-src https://mirrors.aliyun.com/debian/ bullseye main non-free contrib 
     deb https://mirrors.aliyun.com/debian-security/ bullseye-security main 
@@ -48,10 +47,10 @@ echo "
 //change ssh_config ----------------------------------------------------------------------------------------------------------------------
 echo "
     PermitRootLogin yes
-    PasswordAuthentication yes" >> /etc/ssh/sshd_config
- /etc/init.d/ssh restart
+    PasswordAuthentication yes" >> /etc/ssh/sshd_config && /etc/init.d/ssh restart
 
 
 
 //install package -------------------------------------------------------------------------------------------------------------------------
-apt install sshfs -y && apt install cifs-utils -y
+apt install sshfs -y && apt install cifs-utils -y && apt install vim -y
+
