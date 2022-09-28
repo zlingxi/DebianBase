@@ -1,5 +1,5 @@
 #！/bin/bash
-//change image sources.list --------------------------------------------------------------------------------------------------------------
+//image sources.list --------------------------------------------------------------------------------------------------------------
 mv /etc/apt/sources.list /etc/apt/sources.list.bak
 touch /etc/apt/sources.list
 
@@ -22,14 +22,14 @@ apt install sshfs -y && apt install cifs-utils -y && apt install vim -y
 
 
 
-//.profile change ------------------------------------------------------------------------------------------------------------------------
+//.profile  ------------------------------------------------------------------------------------------------------------------------
 echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /root/.profile
 source /root/.profile
 echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /home/lingxi/.profile && source  /home/lingxi/.profile
 
 
 
-//.bashrc change -------------------------------------------------------------------------------------------------------------------------
+//.bashrc  -------------------------------------------------------------------------------------------------------------------------
 echo "#root.bashrc conf 
   alias ls='ls --color'
   alias ls='ls $LS_OPTIONS'
