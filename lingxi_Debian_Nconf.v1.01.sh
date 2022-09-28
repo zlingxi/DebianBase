@@ -15,7 +15,7 @@ echo "#root.bashrc conf
   alias rm='rm -i'
   alias cp='cp -i'
   alias mv='mv -i'" >> /root/.bashrc
-  source /root/.bashrc
+  /etc/init.d/ssh restart
 
 
   echo "#lingxi.bashrc conf 
@@ -49,7 +49,7 @@ echo "
 echo "
     PermitRootLogin yes
     PasswordAuthentication yes" >> /etc/ssh/sshd_config
- /etc/init.d/ssh restart
+service ssh restart
 
 
 //install package -------------------------------------------------------------------------------------------------------------------------
