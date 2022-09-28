@@ -32,7 +32,7 @@ mv /etc/apt/sources.list /etc/apt/sources.list.bak
 touch /etc/apt/sources.list
 
 echo "
-    //aliyunsource-------------------------------------------------------------------------------------------------------------------------
+    # aliyunsource----------------------------
     deb https://mirrors.aliyun.com/debian/ bullseye main non-free contrib 
     deb-src https://mirrors.aliyun.com/debian/ bullseye main non-free contrib 
     deb https://mirrors.aliyun.com/debian-security/ bullseye-security main 
