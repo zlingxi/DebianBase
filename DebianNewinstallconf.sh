@@ -5,7 +5,7 @@ echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /root/.profile && so
 echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /home/lingxi/.profile && source  /home/lingxi/.profile
 
 //.bashrc change -------------------------------------------------------------------------------------------------------------------------
-echo "#lingxi .bashrc conf 
+echo "#root.bashrc conf 
   alias ls='ls --color'
   alias ls='ls $LS_OPTIONS'
   alias ll='ls $LS_OPTIONS -l'
@@ -13,6 +13,16 @@ echo "#lingxi .bashrc conf
   alias rm='rm -i'
   alias cp='cp -i'
   alias mv='mv -i'" >> /root/.bashrc && /root/source .bashrc
+
+
+  echo "#lingxi.bashrc conf 
+  alias ls='ls --color'
+  alias ls='ls $LS_OPTIONS'
+  alias ll='ls $LS_OPTIONS -l'
+  alias l='ls $LS_OPTIONS -lA'
+  alias rm='rm -i'
+  alias cp='cp -i'
+  alias mv='mv -i'" >> /home/lingxi/.bashrc && /home/lingxi/source .bashrc
 
 
 //change image sources.list --------------------------------------------------------------------------------------------------------------
