@@ -1,5 +1,5 @@
 #！/bin/bash
-
+---------------------
 //.profile change ------------------------------------------------------------------------------------------------------------------------
 echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /root/.profile
 source /root/.profile
