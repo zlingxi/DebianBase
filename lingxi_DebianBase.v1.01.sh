@@ -17,10 +17,11 @@ echo "
 
 
 # installPackage -------------------------------------------
-apt install sshfs -y && apt install cifs-utils -y && apt install vim -y && apt install sudo -y
+apt install sshfs -y && apt install cifs-utils -y && apt install vim -y
 
 
 # //.profile  ----------------------------------------------
+apt install sudo -y
 echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /root/.profile
 echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /home/lingxi/.profile
 
@@ -49,7 +50,10 @@ echo "# root.bashrc conf
 touch /etc/ssh/sshd_config.d/RootsshLogin.conf
 echo "
   PermitRootLogin yes
-  PasswordAuthentication yes" >> /etc/ssh/sshd_config.d/RootsshLogin.conf && service ssh restart
+  PasswordAuthentication yes" >> /etc/ssh/sshd_config.d/RootsshLogin.conf
+
+ service ssh restart && source /home/lingxi/.profile && source /root/.profile && source /root/.bashrc &&  source /home/lingxi/.bashrc
 
 
-init 6
+ 
+
