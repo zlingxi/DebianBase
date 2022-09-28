@@ -17,15 +17,14 @@ echo "
 
 
 
-//install package -------------------------------------------------------------------------------------------------------------------------
+//installPackage -------------------------------------------------------------------------------------------------------------------------
 apt install sshfs -y && apt install cifs-utils -y && apt install vim -y
 
 
 
 //.profile  ------------------------------------------------------------------------------------------------------------------------
 echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /root/.profile
-source /root/.profile
-echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /home/lingxi/.profile && source  /home/lingxi/.profile
+echo 'export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH:' >> /home/lingxi/.profile
 
 
 
@@ -49,13 +48,12 @@ echo "#root.bashrc conf
   alias mv='mv -i'" >> /home/lingxi/.bashrc
 
 
-source /root/.bashrc && source /home/lingxi/.bashrc
-
 
 //change ssh_config ----------------------------------------------------------------------------------------------------------------------
+touch /etc/ssh_config.d/RootsshLogin.conf
 echo "
     PermitRootLogin yes
-    PasswordAuthentication yes" >> /etc/ssh/sshd_config && /etc/init.d/ssh restart
+    PasswordAuthentication yes" >> /etc/ssh_config.d/RootsshLogin.conf && /etc/init.d/ssh restart
 
 
-
+init 6
