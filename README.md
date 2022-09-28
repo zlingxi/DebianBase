@@ -7,10 +7,20 @@
 4. 添加第三方ssh root账户登录权限；
 5. 安装远程目录smb挂载所使用的pakage sshfs与cifs-utils
 
-
+# 使用方法：
+1. 安装好Debian系统后，使用root账户登录；
+2. 执行git clone https://github.com/zlingxi/DebianBase.git
+3. 执行sh /root/DebianBase/lingxi_DebianBase.v1.01.sh 等待安装完成；
+4. 如果部分没起作用。请执行init 6 或者 reboot重启系统即可；
 
 ## 注意：
+使用root账户执行本脚本；
 其他的内容会在不忙的时候更新脚本，包括判定/home下是否存在其他用户目录以及修改对应配置文件等；
+由于目前没有写判定，如果安装的Debian拥有除root的其他账户，请修改脚本以下内容，替换为自己的用户名即可；
+    a. 第26行 /home/lingxi/.profile /home/xxx/.profile --- xxx代表自己的用户名；
+    b. 第46行 /home/lingxi/.bashrc /home/xxx/.bashrc ----- xxx代表自己的用户名；
+    c. 第55行 修改lingxi为自己的用户名；
+
 
 2022.09.28@lingxi更新
 
