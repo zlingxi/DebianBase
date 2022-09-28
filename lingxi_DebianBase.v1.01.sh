@@ -17,7 +17,7 @@ echo "#root.bashrc conf
   alias mv='mv -i'" >> /root/.bashrc
   source /root/.bashrc
 
-
+这是一个测试文件 注意！！！！！！！！！！！！！！！！！！！！！！！！！！！
   echo "#lingxi.bashrc conf 
   alias ls='ls --color'
   alias ls='ls $LS_OPTIONS'
