@@ -32,7 +32,7 @@ echo "# root.bashrc conf
   alias l='ls $LS_OPTIONS -lA'
   alias rm='rm -i'
   alias cp='cp -i'
-  alias mv='mv -i'"
+  alias mv='mv -i'
   alias ls='ls --color'" >> /root/.bashrc
 
   echo "# lingxi.bashrc conf 
@@ -41,7 +41,7 @@ echo "# root.bashrc conf
   alias l='ls $LS_OPTIONS -lA'
   alias rm='rm -i'
   alias cp='cp -i'
-  alias mv='mv -i'"
+  alias mv='mv -i'
   alias ls='ls --color'" >> /home/lingxi/.bashrc
 
 
