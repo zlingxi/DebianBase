@@ -12,7 +12,7 @@ echo "#root.bashrc conf
   alias l='ls $LS_OPTIONS -lA'
   alias rm='rm -i'
   alias cp='cp -i'
-  alias mv='mv -i'" >> /root/.bashrc && /root/source .bashrc
+  alias mv='mv -i'" >> /root/.bashrc && source /root/.bashrc
 
 
   echo "#lingxi.bashrc conf 
@@ -22,7 +22,7 @@ echo "#root.bashrc conf
   alias l='ls $LS_OPTIONS -lA'
   alias rm='rm -i'
   alias cp='cp -i'
-  alias mv='mv -i'" >> /home/lingxi/.bashrc && /home/lingxi/source .bashrc
+  alias mv='mv -i'" >> /home/lingxi/.bashrc && source /home/lingxi/.bashrc
 
 
 //change image sources.list --------------------------------------------------------------------------------------------------------------
@@ -49,4 +49,4 @@ service ssh restart
 
 
 //install package -------------------------------------------------------------------------------------------------------------------------
-apt install sshfs && apt install cifs-utils 
+apt install sshfs -y && apt install cifs-utils -y
