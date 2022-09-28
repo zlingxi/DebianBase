@@ -12,8 +12,7 @@ echo "#lingxi .bashrc conf
   alias l='ls $LS_OPTIONS -lA'
   alias rm='rm -i'
   alias cp='cp -i'
-  alias mv='mv -i'
-" >> /root/.bashrc && source .bashrc
+  alias mv='mv -i'" >> /root/.bashrc && source .bashrc
 
 
 //change image sources.list --------------------------------------------------------------------------------------------------------------
